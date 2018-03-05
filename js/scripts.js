@@ -29,15 +29,23 @@ $(document).ready(function() {
 
     var inputtedFirstName = $("input#new-first-name").val();
     var inputtedLastName = $("input#new-last-name").val();
-    vari
-    i
-    n
+    var inputtedDOB = $("input#new-dob").val();
+    var inputtedSex = $("input#new-sex").val();
+    var inputtedMaritalStatus = $("input#new-marital-status").val();
+    var inputtedIDNo = $("input#new-id-no").val();
+    var inputtedBloodType = $("input#new-blood-type").val();
+    var inputtedHeight = $("input#new-height").val();
+    var inputtedWeight = $("input#new-weight").val();
+    var inputtedAddress = $("input#new-address").val();
     var inputtedStreet = $("input#new-street").val();
-    p
+    var inputtedPostalCode = $("input#new-postal-code").val();
     var inputtedCity = $("input#new-city").val();
     var inputtedCountry = $("input#new-country").val();
+    var inputtedEmail = $("input#new-email").val();
+    var inputtedMobileNo = $("input#new-mobile").val();
+    var inputtedWorkNo = $("input#new-work").val();
 
-    var newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedStreet, inputtedCity, inputtedCountry);
+    var newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedDOB, inputtedSex, inputtedMaritalStatus, inputtedIDNo, inputtedBloodType, inputtedHeight, inputtedWeight, inputtedAddress, inputtedStreet, inputtedPostalCode, inputtedCity, inputtedCountry, inputtedEmail, inputtedMobileNo, inputtedWork);
 
     $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
 
