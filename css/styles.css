@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #show-contact {
   display: none;
 }
@@ -17,4 +18,31 @@ h1 {
 
 h2 {
   text-align: center;
+=======
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.logo{
+  height: 100px;
+  width: 100px;
+  align: right;
+}
+
+#header{
+  background-color: #D2B4DE;
+}
+
+.nav{
+  position: absolute;
+}
+
+.title{
+  color: #1F618D;
+}
+
+.nav-btn{
+  left: 100%;
+>>>>>>> 864285cc988eb8ad2415dd478f44b58c69dc6cf9
 }
