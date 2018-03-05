@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Address book</title>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <h2>My Profile</h2>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Personal
+    <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Personal</a></li>
+        <li><a href="#">Emergency</a></li>
+        <li><a href="#">Insurance</a></li>
+      </ul>
+    </div>
+    </div>
+
+    <div class="row">
+      <div class="col->md-6">
+        <div id="show-contact">
+
+          <p>First name: <span class="first-name"></span></p>
+          <p>Last name: <span class="last-name"></span></p>
+          <p>D.O.B: <span class="d-o-b"></span></p>
+          <p>Sex: <span class="sex"></span></p>
+          <p>Marital Status: <span class="marital-status"></span></p>
+          <p>ID Number: <span class="id-number"></span></p>
+          <p>Blood Type: <span class="blood-type"></span></p>
+          <p>Height: <span class="height"></span></p>
+          <p>Weight: <span class="weight"></span></p>
+          <p>Address: <span class="address"></span></p>
+          <p>Street: <span class="street"></span></p>
+          <p>Postal Code:<span class="postal-code"></span></p>
+          <p>City: <span class="city"></span></p>
+          <p>Country: <span class="country"></span></p>
+          <p>Email: <span class="email"></span></p>
+          <p>Mobile: <span class="mobile"></span></p>
+          <p>Work: <span class="work"></span></p>
+        </div>
+      </div>
+
+      <form id="new-contact">
+        <div class="form-group">
+          <label for="new-first-name">First name</label>
+          <input type="text" class="form-control" id="new-first-name">
+        </div>
+        <div class="form-group">
+          <label for="new-last-name">Last name</label>
+          <input type="text" class="form-control" id="new-last-name">
+        </div>
+
+        <form id="new-contact">
+          <div class="form-group">
+            <label for="new-d-o-b">D.O.B</label>
+            <input type="text" class="form-control" id="d-o-b">
+          </div>
+          <div class="form-group">
+            <label for="new-sex">Sex</label>
+            <input type="text" class="form-control" id="new-sex">
+          </div>
+
+          <form id="new-contact">
+            <div class="form-group">
+              <label for="new-marital-status">Marital Status</label>
+              <input type="text" class="form-control" id="new-marital-status">
+            </div>
+            <div class="form-group">
+              <label for="new-id-number">ID Number</label>
+              <input type="text" class="form-control" id="new-id-number">
+            </div>
+
+            <form id="new-contact">
+              <div class="form-group">
+                <label for="new-blood-type">Blood Type</label>
+                <input type="text" class="form-control" id="new-blood-type">
+              </div>
+              <div class="form-group">
+                <label for="new-height">Height</label>
+                <input type="text" class="form-control" id="new-height">
+              </div>
+
+              <form id="new-contact">
+                <div class="form-group">
+                  <label for="new-weight">Weight</label>
+                  <input type="text" class="form-control" id="new-weight">
+                </div>
+                <div class="form-group">
+                  <label for="new-address">Address</label>
+                  <input type="text" class="form-control" id="new-address">
+                </div>
+
+                <form id="new-contact">
+                  <div class="form-group">
+                    <label for="new-street">Street</label>
+                    <input type="text" class="form-control" id="new-street">
+                  </div>
+                  <div class="form-group">
+                    <label for="new-postal-code">Postal Code</label>
+                    <input type="text" class="form-control" id="new-postal-code">
+                  </div>
+                  <div class="form-group">
+                    <label for="new-city">City</label>
+                    <input type="text" class="form-control" id="new-city">
+                  </div>
+                  <div class="form-group">
+                    <label for="new-country">Country</label>
+                    <input type="text" class="form-control" id="new-country">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="new-email">Email</label>
+                    <input type="text" class="form-control" id="new-email">
+                  </div>
+                  <div class="form-group">
+                    <label for="new-mobile-no">Mobile No</label>
+                    <input type="text" class="form-control" id="new-mobile-no">
+                  </div>
+                  <div class="form-group">
+                    <label for="new-work-no">Work</label>
+                    <input type="text" class="form-control" id="new-work-no">
+                  </div>
+
+                  <button type="submit" class="btn">Add</button>
+                </form>
+
+                <h2>Personal Profile:</h2>
+                <ul id="contacts">
+
+                </ul>
+    </div>
+    </div>
+    </div>
+  </body>
+
+</html>
