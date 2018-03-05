@@ -45,7 +45,7 @@ $(document).ready(function() {
     var inputtedMobileNo = $("input#new-mobile").val();
     var inputtedWorkNo = $("input#new-work").val();
 
-    var newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedDOB, inputtedSex, inputtedMaritalStatus, inputtedIDNo, inputtedBloodType, inputtedHeight, inputtedWeight, inputtedAddress, inputtedStreet, inputtedPostalCode, inputtedCity, inputtedCountry, inputtedEmail, inputtedMobileNo, inputtedWork);
+    var newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedDOB, inputtedSex, inputtedMaritalStatus, inputtedIDNo, inputtedBloodType, inputtedHeight, inputtedWeight, inputtedAddress, inputtedStreet, inputtedPostalCode, inputtedCity, inputtedCountry, inputtedEmail, inputtedMobileNo, inputtedWorkNo);
 
     $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
 
@@ -66,3 +66,20 @@ $(document).ready(function() {
     $("input#new-country").val("");
   });
 });
+
+
+<
+script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" > < /script> <
+  image id = "profileImage"
+src = "http://lorempixel.com/100/100" / >
+  <
+  input id = "imageUpload"
+type = "file"
+name = "profile_photo"
+placeholder = "Photo"
+required = ""
+capture >
+
+  $("#profileImage").click(function(e) {
+    $("#imageUpload").click();
+  });
