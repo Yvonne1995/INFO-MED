@@ -1,0 +1,26 @@
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.logo{
+  height: 100px;
+  width: 100px;
+  align: right;
+}
+
+#header{
+  background-color: #D2B4DE;
+}
+
+.nav{
+  position: absolute;
+}
+
+.title{
+  color: #1F618D;
+}
+
+.nav-btn{
+  left: 100%;
+}
