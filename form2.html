@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts2.js"></script>
+    <title>Emergency</title>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <h2>Emergency Contact Information</h2>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Emergency
+    <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Emergency</a></li>
+        <li><a href="#">Personanl</a></li>
+        <li><a href="#">Insurance</a></li>
+      </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="row">
+      <div id="show-contact">
+        <div class="col-md-6">
+          <p>First name: <span class="first-name"></span></p>
+          <p>Last name: <span class="last-name"></span></p>
+          <p>Relation: <span class="relation"></span></p>
+          <p>Address: <span class="address"></span></p>
+          <p>Postal Code:<span class="postal-code"></span></p>
+          <p>City: <span class="city"></span></p>
+          <p>Country: <span class="country"></span></p>
+          <p>Email: <span class="email"></span></p>
+          <p>Mobile: <span class="mobile"></span></p>
+          <p>Work: <span class="work"></span></p>
+          <p>Doctor: <span class="doctor"></span></p>
+          <p>Phone No: <span class="phone-no"></span></p>
+        </div>
+      </div>
+
+      <form id="new-contact">
+        <div class="form-group">
+          <label for="new-first-name">First name</label>
+          <input type="text" class="form-control" id="new-first-name">
+        </div>
+        <div class="form-group">
+          <label for="new-last-name">Last name</label>
+          <input type="text" class="form-control" id="new-last-name">
+        </div>
+
+        <form id="new-contact">
+          <div class="form-group">
+            <label for="new-relation">Relation</label>
+            <input type="text" class="form-control" id="new-relation">
+          </div>
+
+
+          <div class="form-group">
+            <label for="new-postal-code">Postal Code</label>
+            <input type="text" class="form-control" id="new-postal-code">
+          </div>
+          <div class="form-group">
+            <label for="new-city">City</label>
+            <input type="text" class="form-control" id="new-city">
+          </div>
+          <div class="form-group">
+            <label for="new-country">Country</label>
+            <input type="text" class="form-control" id="new-country">
+          </div>
+
+          <div class="form-group">
+            <label for="new-email">Email</label>
+            <input type="text" class="form-control" id="new-email">
+          </div>
+          <div class="form-group">
+            <label for="new-mobile-no">Mobile No</label>
+            <input type="text" class="form-control" id="new-mobile-no">
+          </div>
+          <div class="form-group">
+            <label for="new-work-no">Work No</label>
+            <input type="text" class="form-control" id="new-work-no">
+          </div>
+
+          <div class="form-group">
+            <label for="doctor">Doctor</label>
+            <input type="text" class="form-control" id="new-doctor">
+          </div>
+
+          <div class="form-group">
+            <label for="phone-no">Phone No</label>
+            <input type="text" class="form-control" id="new-phone-no">
+          </div>
+          <center>
+            <button type="submit" class="btn">Add</button>
+          </center>
+        </form>
+
+        <h2>Emergency Info:</h2>
+        <ul id="contacts">
+
+        </ul>
+    </div>
+    </div>
+    </div>
+  </body>
+
+</html>
