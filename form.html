@@ -13,7 +13,7 @@
 
   <body>
 
-    <div class="container">
+    <div class="container-fluid">
       <h2>My Profile</h2>
     </div>
     <div class="dropdown">
@@ -26,14 +26,15 @@
       </ul>
     </div>
     </div>
+    </div>
+    </div>
 
     <div class="row">
-      <div class="col->md-6">
-        <div id="show-contact">
-
+      <div id="show-contact">
+        <div class="col-md-6">
           <p>First name: <span class="first-name"></span></p>
           <p>Last name: <span class="last-name"></span></p>
-          <p>D.O.B: <span class="d-o-b"></span></p>
+          <p>D.O.B: <span class="dob"></span></p>
           <p>Sex: <span class="sex"></span></p>
           <p>Marital Status: <span class="marital-status"></span></p>
           <p>ID Number: <span class="id-number"></span></p>
@@ -46,8 +47,8 @@
           <p>City: <span class="city"></span></p>
           <p>Country: <span class="country"></span></p>
           <p>Email: <span class="email"></span></p>
-          <p>Mobile: <span class="mobile"></span></p>
-          <p>Work: <span class="work"></span></p>
+          <p>Mobile: <span class="mobile-no"></span></p>
+          <p>Work: <span class="work-no"></span></p>
         </div>
       </div>
 
@@ -63,8 +64,8 @@
 
         <form id="new-contact">
           <div class="form-group">
-            <label for="new-d-o-b">D.O.B</label>
-            <input type="text" class="form-control" id="d-o-b">
+            <label for="new-dob">D.O.B</label>
+            <input type="text" class="form-control" id="new-dob">
           </div>
           <div class="form-group">
             <label for="new-sex">Sex</label>
@@ -132,10 +133,12 @@
                     <input type="text" class="form-control" id="new-work-no">
                   </div>
 
-                  <button type="submit" class="btn">Add</button>
+                  <center>
+                    <button type="submit" class="btn">Add</button>
                 </form>
+                </center>
 
-                <h2>Personal Profile:</h2>
+                <h2>Personal Info:</h2>
                 <ul id="contacts">
 
                 </ul>
