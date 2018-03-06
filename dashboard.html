@@ -20,9 +20,9 @@
             <span class="hamburger">
           <a href="#" onclick="openSideMenu()">
           <svg width="30" height="30">
-            <path d="M0,5 30,5" stroke="#1F618D" stoke-width="5"/>
-            <path d="M0,14 30,14" stroke="#1F618D" stoke-width="5"/>
-            <path d="M0,23 30,23" stroke="#1F618D" stoke-width="5"/>
+            <path d="M0,5 30,5" stroke="#3B341F" stoke-width="5"/>
+            <path d="M0,14 30,14" stroke="#3B341F" stoke-width="5"/>
+            <path d="M0,23 30,23" stroke="#3B341F" stoke-width="5"/>
           </svg>
           </a>
             </span>
@@ -43,7 +43,7 @@
     <!--in hamburger menu  -->
     <div class="side-nav" id="side-menu">
       <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
-      <a href="#">My Dashboard</a>
+      <a href="#main">My Dashboard</a>
       <a href="#" data-toggle="collapse" data-target="#myRecords">My Records</a>
       <div class="collapse" id="myRecords">
         <ul>
@@ -66,20 +66,48 @@
 
 <!-- body of dashboard -->
 <div id="main">
-  <div class="jumbotron" id="daily-tip">
-    <center>
-    <p>Did you know? <br> ".....An apple a day keeps the doctor away."</p>
-  </center>
-  </div>
-  <div class="jumbotron" id="health-tip">
-    <center>
-    <p>Tip of the day <br> .....Drink eight glasses of water ;)</p>
-  </center>
-  </div>
-  <div class="advert">
-      <img src="images/advert2.jpeg" alt="advert">
+  <div class="row">
+  <div class="col-md-12">
+    <div class="col-md-10">
+      <div class="jumbotron" id="daily-tip">
+        <center>
+        <p>Did you know? <br> ".....An apple a day keeps the doctor away."</p>
+      </center>
+      </div>
+      <div class="jumbotron" id="health-tip">
+        <center>
+        <p>Tip of the day <br> .....Drink eight glasses of water ;)</p>
+      </center>
+      </div>
+
+
+      </div>
+
+
+
+<!-- advert section -->
+      <div class="col-md-2">
+      <div class="advert">
+          <img src="images/ad.jpg" alt="advert" class="adv">
+          <img src="images/ad2.jpeg" alt="advert" class="adv">
+      </div>
+    </div>
+
   </div>
 </div>
+  <!-- First aid search option -->
+  <section>
+    <center>
+    <div class="jumbotron" id="circle">
+    <h3>All your first aid needs at your fingertips</h3>
+      <form>
+        <input type="text" name="search" placeholder="Search..">
+      </form>
+    </section>
+    </div>
+    </center>
+  </div>
+
 
 
     <script src="js/jquery-3.3.1.js"></script>

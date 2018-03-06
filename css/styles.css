@@ -75,16 +75,46 @@ body {
 }
 
 #daily-tip{
-  /*background-image: url("../images/background.svg");*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: 2000px;
   box-shadow:  0 8px 16px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 #health-tip{
-  /*background-image: url("../images/blue.jpeg");*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: 2000px;
   box-shadow:  0 8px 16px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.adv{
+  height: 200px;
+  width: 200px;
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+#circle{
+  border-radius: 100%;
+  height: 300px;
+  width: 400px;
+  background-color: #C0392B;
+  color: #fff;
 }
