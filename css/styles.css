@@ -10,27 +10,10 @@ body {
 }
 
 #header{
-  background-color: #D2B4DE;
+  background-color: #A5CBC3;
   overflow: hidden;
 }
 
-/*.navbar a{
-float: left;
-display: block;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 17px;
-}
-
-navbar ul{
-  padding: 8px 0 0 0;
-  list-style: none;
-}
-
-navbar a:hover{
-  background-color:
-}*/
 
 .side-nav{
   height: 100%;
@@ -39,7 +22,7 @@ navbar a:hover{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color:#D4E6F1;
+  background-color:#3B341F;
   opacity: 0.9;
   overflow-x: hidden;
   padding-top: 60px;
@@ -47,16 +30,17 @@ navbar a:hover{
 }
 
 .side-nav a{
-  padding: 10px 10px 30px;
+  padding: 10px 10px 10px;
   text-decoration: none;
-  font-size: 22px;
-  color: #000;
+  font-size: 15px;
+  color: #EFFFC8;
   display: block;
   transition: 0.3s;
 }
 
 .side-nav a:hover{
-  color: #fff;
+  color: #EFFFC8;
+  font-size: 20px;
 }
 
 .side-nav .btn-close{
@@ -65,6 +49,7 @@ navbar a:hover{
   right: 22px;
   font-size: 36;
   margin-left: 50px;
+  color: #D2B4DE;
 }
 
 #main{
@@ -80,4 +65,26 @@ navbar a:hover{
 
 .nav-btn{
   left: 100%;
+}
+
+.sideside{
+  font-size: 5px;
+}
+.advert{
+  float: right;
+}
+
+#daily-tip{
+  /*background-image: url("../images/background.svg");*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 2000px;
+  box-shadow:  0 8px 16px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+#health-tip{
+  /*background-image: url("../images/blue.jpeg");*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 2000px;
+  box-shadow:  0 8px 16px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
