@@ -10,44 +10,72 @@
   </head>
 
   <body>
+    <!--header -->
     <header class="masterhead">
       <div class="row" id="header">
-        <div class="col-md-4"></div>
-        <div class="col-md-2">
-      <h1 class="title">INFO-MED</h1>
-      <h5><em><strong>.....the smart physician</strong></em></h5>
-    </div>
+        <div class="col-md-8">
+
+          <!--hambuger menu-->
+          <nav class="navbar">
+            <span class="hamburger">
+          <a href="#" onclick="openSideMenu()">
+          <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#1F618D" stoke-width="5"/>
+            <path d="M0,14 30,14" stroke="#1F618D" stoke-width="5"/>
+            <path d="M0,23 30,23" stroke="#1F618D" stoke-width="5"/>
+          </svg>
+          </a>
+            </span>
+          </nav>
+        </div>
+
+<!--logo  -->
     <div class="col-md-4"></div>
-    <div class="col-md-2">
-    <img src="images/logo2.png" class="logo" alt="logo">
-    </div>
+    <img src="images/logo2.png" class="logo" alt="logo" style="float:left;">
+    <h1 class="title">INFO-MED</h1>
+    <h5><em><strong>.....the smart physician</strong></em></h5>
+  </div>
+    <!-- logo on side -->
+
     </div>
     </header>
 
-<nav class="nav">
-  <button class="nav-btn">Toggle Navigation</button>
-  <ul>
-    <li>My Dashboard</li>
-    <li>
-      <span class="nav-group">My Records</span>
-      <ul>
-        <li>Conditions</li>
-        <li>Medications</li>
-        <li>Allergies</li>
-        <li>Family History</li>
-        <li>Imaging</li>
-      </ul>
-      </li>
-    <li>
-    <span class="nav-group">My Profile</span>
-    <ul>
-      <li>Personal</li>
-      <li>Emergency</li>
-      <li>Insurance</li>
-    </ul>
-    </li>
-  </ul>
-</nav>
+    <!--in hamburger menu  -->
+    <div class="side-nav" id="side-menu">
+      <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+      <a href="#">My Dashboard</a>
+      <a href="#">My Records</a>
+      <a href="#">My Profile</a>
+      <!-- <a href="#"></a>
+      <a href="#"></a>
+      <a href="#"></a> -->
+    </div>
+                <!-- <ul>
+                  <li>My Dashboard</li>
+                  <li>
+                    <span class="nav-group">My Records</span>
+                    <ul>
+                      <li>Conditions</li>
+                      <li>Medications</li>
+                      <li>Allergies</li>
+                      <li>Family History</li>
+                      <li>Imaging</li>
+                    </ul>
+                    </li>
+                  <li>
+                  <span class="nav-group">My Profile</span>
+                  <ul>
+                    <li>Personal</li>
+                    <li>Emergency</li>
+                    <li>Insurance</li>
+                  </ul>
+                  </li>
+                </ul> -->
+<div id="main">
+  <p>jhdfguksj</p>
+</div>
+
+
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/script.js"></script>
   </body>
