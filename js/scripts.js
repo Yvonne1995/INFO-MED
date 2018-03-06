@@ -20,7 +20,18 @@ function Contact(first, last, dob, sex, marital, id, blood, height, weight, addr
 }
 
 Contact.prototype.fullName = function() {
-  return this.firstName + " " + this.lastName + " " + this.dob + " " + this.sex + " " + this.marital + " " + this.id + " " + this.blood + " " + this.height + " " + this.weight + " " + this.address + " " + this.street + " " + this postal + " " + this.city + " " + this.country + " " + this.email + " " + this.mobile + " " + this.work;
+  return this.firstName + " " +
+    this.lastName + " " +
+    this.dob + " " +
+    this.sex + " " +
+    this.marital + " " +
+    this.id + " " +
+    this.blood + " " +
+    this.height + " " +
+    this.weight + " " +
+    this.address + " " +
+    this.street + " " +
+    this.postal + " " + this.city + " " + this.country + " " + this.email + " " + this.mobile + " " + this.work;
 }
 // user interface logic
 $(document).ready(function() {
@@ -66,20 +77,3 @@ $(document).ready(function() {
     $("input#new-country").val("");
   });
 });
-
-
-<
-script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" > < /script> <
-  image id = "profileImage"
-src = "http://lorempixel.com/100/100" / >
-  <
-  input id = "imageUpload"
-type = "file"
-name = "profile_photo"
-placeholder = "Photo"
-required = ""
-capture >
-
-  $("#profileImage").click(function(e) {
-    $("#imageUpload").click();
-  });

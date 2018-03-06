@@ -53,9 +53,6 @@ h2 {
     left: 100%;
     >>>>>>>864285cc988eb8ad2415dd478f44b58c69dc6cf9
   }
-  #imageUpload {
-    display: none;
-  }
-  #profileImage {
-    cursor: pointer;
+  #submitnow {
+    margin left: 200px;
   }
