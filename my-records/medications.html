@@ -2,14 +2,38 @@
 <head>
 </head>
 <body>
-  <form>
-    
-  </form>
   <div class="container-fluid">
-    <div class="custom-file">
-  <input type="file" class="custom-file-input" id="customFile">
-  <label class="custom-file-label" for="customFile"></label>
-</div>
+<button type="button" id="hidden" name="add">Add
+  <form>
+    <div class="form-group">
+    <label for="condition">Pharmacy</label>
+    <input type="text" class="form-control" id="pharmacy" placeholder="Pharmacy">
   </div>
+  <div class="form-group">
+      <label for="name of medicine">Name of medicine</label>
+      <input type="text" class="form-control" id="medicine" placeholder="medicine">
+    </div>
+    <div class="form-group">
+    <label for="Prescription">Prescription</label>
+    <input type="text" class="form-control" id="prescription" placeholder="Prescription">
+  </div>
+    <div class="form-group">
+    <label for="notes">Notes</label>
+    <textarea class="form-control" id="notes" rows="3"></textarea>
+  </div>
+  <div class="custom-file">
+    Attachments
+  <input type="file" class="custom-file-input" id="attachments">
+  <label class="attachments" for="customFile"></label>
+</div>
+
+  <div class="button">
+  <button type="submit" name="save" id="save">Save</button>
+  </div>
+
+</form>
+</button>
+  </div>
+  <script src="records.js"></script>
 </body>
 </html>
