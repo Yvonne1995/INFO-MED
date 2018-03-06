@@ -1,5 +1,7 @@
 body {
   color: blue;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .form-group {
@@ -52,7 +54,4 @@ h2 {
   .nav-btn {
     left: 100%;
     >>>>>>>864285cc988eb8ad2415dd478f44b58c69dc6cf9
-  }
-  #submitnow {
-    margin left: 200px;
   }
