@@ -6,7 +6,7 @@
 </head>
 <body>
   <div class="container-fluid">
-<button type="button" class="addnew" name="addnew">
+<button type="button" class="addnew" name="addnew">Add new</button>
   <form>
     <div class="form-group">
     <label for="condition">Condition</label>
@@ -26,15 +26,14 @@
   </div>
   </form>
   <div class="custom-file">
-    Attachments
-  <input type="file" class="custom-file-input" class="attachments">
-  <label class="attachments" for="customFile"></label>
-</div>
+   <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+   <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+   <div class="invalid-feedback">Example invalid custom file feedback</div>
+ </div>
 
   <div class="button">
   <button type="submit" name="save" class="save">Save</button>
   </div>
-</button>
   </div>
 </body>
 </html>

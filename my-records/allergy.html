@@ -1,10 +1,12 @@
 <html>
 <head>
 <title>Allergies</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="form2.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <div class="container-fluid">
-<button type="button" class="hidden" name="add">Add
+<button type="button" class="hidden" name="add">Add</button>
   <form>
     <div class="form-group">
     <label for="Allergy">Allergy</label>
@@ -19,17 +21,15 @@
     <textarea class="form-control" class="notes" rows="3"></textarea>
   </div>
   <div class="custom-file">
-    Attachments
-  <input type="file" class="custom-file-input" class="attachments">
-  <label class="attachments" for="customFile"></label>
-</div>
-
+   <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+   <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+   <div class="invalid-feedback">Example invalid custom file feedback</div>
+ </div>
   <div class="button">
   <button type="submit" name="save" class="save">Save</button>
   </div>
 
 </form>
-</button>
   </div>
   </body>
   </html>
