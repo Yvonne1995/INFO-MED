@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/dashboard.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
@@ -47,19 +47,19 @@
       <a href="#" data-toggle="collapse" data-target="#myRecords">My Records</a>
       <div class="collapse" id="myRecords">
         <ul>
-          <li><a href="#" class="sideside">Conditions</a></li>
-          <li><a href="#" class="sideside">Medications</a></li>
-          <li><a href="#" class="sideside">Allergies</a></li>
-          <li><a href="#" class="sideside">Family History</a></li>
-          <li><a href="#" class="sideside">Imaging</a></li>
+          <li><a href="my-records/conditions.html">Conditions</a></li>
+          <li><a href="my-records/medications.html">Medications</a></li>
+          <li><a href="my-records/allergy.html">Allergies</a></li>
+          <li><a href="my-records/familyhistory.html">Family History</a></li>
+          <li><a href="my-records/imaging.html">Imaging</a></li>
         </ul>
       </div>
       <a href="#" data-toggle="collapse" data-target="#myProfile">My Profile</a>
         <div class="collapse" id="myProfile">
           <ul>
-        <li><a href="#" class="sideside">Personal</a></li>
-        <li><a href="#" class="sideside">Emergency</a></li>
-        <li><a href="#" class="sideside">Insurance</a></li>
+        <li><a href="#">Personal</a></li>
+        <li><a href="#">Emergency</a></li>
+        <li><a href="#">Insurance</a></li>
       </ul>
     </div>
   </div>
@@ -97,13 +97,22 @@
 </div>
   <!-- First aid search option -->
   <section>
+    <div class="row">
+<div class="col-md-12">
+  <div class="col-md-6">
+    <h3>Click here for first aid tips at your beck and call!</h3>
     <center>
-    <div class="jumbotron" id="circle">
-    <h3>All your first aid needs at your fingertips</h3>
-      <form>
-        <input type="text" name="search" placeholder="Search..">
-      </form>
-    </section>
+    <a href="https://www.webmd.com/"><img class="firstAid" src="images/firstaid.png" alt="first-aid-button"></a>
+  </center>
+    </div>
+
+      <!-- medical card -->
+    <div class="col-md-6">
+      <h3>Get your medical card for fast access of medical records!</h3>
+      <img src="images/Chadcard.jpg" alt="medicalcard" class="card">
+    </div>
+    </div>
+      </div>
     </div>
     </center>
   </div>
@@ -112,6 +121,6 @@
 
     <script src="js/jquery-3.3.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/dashboard.js"></script>
   </body>
 </html>

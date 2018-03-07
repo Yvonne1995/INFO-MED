@@ -118,3 +118,13 @@ input[type=text]:focus {
   background-color: #C0392B;
   color: #fff;
 }
+
+.firstAid{
+  height: 100px;
+  width: 100px;
+}
+
+.card{
+  height: 300px;
+  width: 500px;
+}
