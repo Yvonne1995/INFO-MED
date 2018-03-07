@@ -6,49 +6,112 @@
     <meta charset="utf-8">
     <meta name="viewport">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/dashboard.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
+    <!--header -->
     <header class="masterhead">
       <div class="row" id="header">
-        <div class="col-md-4"></div>
-        <div class="col-md-2">
-      <h1 class="title">INFO-MED</h1>
-      <h5><em><strong>.....the smart physician</strong></em></h5>
-    </div>
+        <div class="col-md-8">
+
+          <!--hambuger menu-->
+          <nav class="navbar">
+            <span class="hamburger">
+          <a href="#" onclick="openSideMenu()">
+          <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#3B341F" stoke-width="5"/>
+            <path d="M0,14 30,14" stroke="#3B341F" stoke-width="5"/>
+            <path d="M0,23 30,23" stroke="#3B341F" stoke-width="5"/>
+          </svg>
+          </a>
+            </span>
+          </nav>
+        </div>
+
+<!--logo  -->
     <div class="col-md-4"></div>
-    <div class="col-md-2">
-    <img src="images/logo2.png" class="logo" alt="logo">
-    </div>
+    <img src="images/logo2.png" class="logo" alt="logo" style="float:left;">
+    <h1 class="title">INFO-MED</h1>
+    <h5><em><strong>.....the smart physician</strong></em></h5>
+  </div>
+    <!-- logo on side -->
+
     </div>
     </header>
 
-<nav class="nav">
-  <button class="nav-btn">Toggle Navigation</button>
-  <ul>
-    <li>My Dashboard</li>
-    <li>
-      <span class="nav-group">My Records</span>
-      <ul>
-        <li>Conditions</li>
-        <li>Medications</li>
-        <li>Allergies</li>
-        <li>Family History</li>
-        <li>Imaging</li>
+    <!--in hamburger menu  -->
+    <div class="side-nav" id="side-menu">
+      <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+      <a href="#main">My Dashboard</a>
+      <a href="#" data-toggle="collapse" data-target="#myRecords">My Records</a>
+      <div class="collapse" id="myRecords">
+        <ul>
+          <li><a href="#" class="sideside">Conditions</a></li>
+          <li><a href="#" class="sideside">Medications</a></li>
+          <li><a href="#" class="sideside">Allergies</a></li>
+          <li><a href="#" class="sideside">Family History</a></li>
+          <li><a href="#" class="sideside">Imaging</a></li>
+        </ul>
+      </div>
+      <a href="#" data-toggle="collapse" data-target="#myProfile">My Profile</a>
+        <div class="collapse" id="myProfile">
+          <ul>
+        <li><a href="#" class="sideside">Personal</a></li>
+        <li><a href="#" class="sideside">Emergency</a></li>
+        <li><a href="#" class="sideside">Insurance</a></li>
       </ul>
-      </li>
-    <li>
-    <span class="nav-group">My Profile</span>
-    <ul>
-      <li>Personal</li>
-      <li>Emergency</li>
-      <li>Insurance</li>
-    </ul>
-    </li>
-  </ul>
-</nav>
+    </div>
+  </div>
+
+<!-- body of dashboard -->
+<div id="main">
+  <div class="row">
+  <div class="col-md-12">
+    <div class="col-md-10">
+      <div class="jumbotron" id="daily-tip">
+        <center>
+        <p>Did you know? <br> ".....An apple a day keeps the doctor away."</p>
+      </center>
+      </div>
+      <div class="jumbotron" id="health-tip">
+        <center>
+        <p>Tip of the day <br> .....Drink eight glasses of water ;)</p>
+      </center>
+      </div>
+
+
+      </div>
+
+
+
+<!-- advert section -->
+      <div class="col-md-2">
+      <div class="advert">
+          <img src="images/ad.jpg" alt="advert" class="adv">
+          <img src="images/ad2.jpeg" alt="advert" class="adv">
+      </div>
+    </div>
+
+  </div>
+</div>
+  <!-- First aid search option -->
+  <section>
+    <center>
+    <div class="jumbotron" id="circle">
+    <h3>All your first aid needs at your fingertips</h3>
+      <form>
+        <input type="text" name="search" placeholder="Search..">
+      </form>
+    </section>
+    </div>
+    </center>
+  </div>
+
+
+
     <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/dashboard.js"></script>
   </body>
 </html>
