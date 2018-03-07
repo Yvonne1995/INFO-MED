@@ -158,3 +158,14 @@ input[type=text]:focus {
 .ad:hover{
   opacity: 0.7;
 }
+.crs{
+  padding: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.col-md-10{
+  padding: 0px;
+}
+.col-md-12{
+  padding: 0px;
+}
