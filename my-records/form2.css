@@ -1,1 +1,10 @@
-
+#button{
+  align:center;
+}
+h1{
+  text-align: center;
+  font-size: 40;
+}
+p{
+  text-align: right;
+}

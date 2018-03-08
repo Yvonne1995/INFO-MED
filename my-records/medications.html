@@ -6,9 +6,30 @@
 </head>
 <body>
   <div class="container-fluid">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-      Add New
-    </button>
+
+    <h1>  Medications</h1>
+    <div class="row">
+      <div class="col-md-8">
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Personal
+    <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="conditions.html">conditions</a></li>
+        <li><a href="familyhistory.html">family History</a></li>
+        <li><a href="allergy.html">Allergy</a></li>
+        <li><a href="medications.html">Medications</a></li>
+        <li><a href="imaging.html">Imaging</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-10">
+<p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+Add New
+</button></p>
+</div>
+</div>
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -54,6 +75,20 @@
     </div>
 
   </div>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAXX9UZo5IVcsCWdIWzxL6DUkFqQpCSZic",
+      authDomain: "info-med.firebaseapp.com",
+      databaseURL: "https://info-med.firebaseio.com",
+      projectId: "info-med",
+      storageBucket: "info-med.appspot.com",
+      messagingSenderId: "275187178038"
+    };
+    firebase.initializeApp(config);
+
+    firebase.database().ref
+  </script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
