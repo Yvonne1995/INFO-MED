@@ -1,39 +1,144 @@
+<!DOCTYPE html>
 <html>
+
 <head>
+  <title>INFO-MED</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="form2.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-  <div class="container-fluid">
-<button type="button" id="hidden" name="add">Add
-  <form>
-    <div class="form-group">
-    <label for="condition">Pharmacy</label>
-    <input type="text" class="form-control" id="pharmacy" placeholder="Pharmacy">
-  </div>
-  <div class="form-group">
-      <label for="name of medicine">Name of medicine</label>
-      <input type="text" class="form-control" id="medicine" placeholder="medicine">
+  <!--header -->
+  <header class="masterhead">
+    <div class="row" id="header">
+      <div class="col-md-8">
+
+        <!--hambuger menu-->
+        <nav class="navbar">
+          <span class="hamburger">
+          <a href="#" onclick="openSideMenu()">
+          <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#333333" stoke-width="5"/>
+            <path d="M0,14 30,14" stroke="#333333" stoke-width="5"/>
+            <path d="M0,23 30,23" stroke="#333333" stoke-width="5"/>
+          </svg>
+          </a>
+            </span>
+        </nav>
+      </div>
+
+      <!--logo  -->
+      <div class="col-md-4"></div>
+      <img src="../images/logo6.png" class="logo" alt="logo" style="float:left;">
+      <h1 class="title">INFO-MED</h1>
+      <h5><em><strong>.....the smart physician</strong></em></h5>
     </div>
-    <div class="form-group">
-    <label for="Prescription">Prescription</label>
-    <input type="text" class="form-control" id="prescription" placeholder="Prescription">
-  </div>
-    <div class="form-group">
-    <label for="notes">Notes</label>
-    <textarea class="form-control" id="notes" rows="3"></textarea>
-  </div>
-  <div class="custom-file">
-    Attachments
-  <input type="file" class="custom-file-input" id="attachments">
-  <label class="attachments" for="customFile"></label>
-</div>
+    <!-- logo on side -->
 
-  <div class="button">
-  <button type="submit" name="save" id="save">Save</button>
+    </div>
+  </header>
+
+  <!--in hamburger menu  -->
+  <div class="side-nav" id="side-menu">
+    <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+    <a href="../dashboard.html">My Dashboard</a>
+    <a href="#" data-toggle="collapse" data-target="#myRecords">My Records</a>
+    <div class="collapse" id="myRecords">
+      <ul>
+        <li><a href="conditions.html">Conditions</a></li>
+        <li><a href="medications.html">Medications</a></li>
+        <li><a href="allergy.html">Allergies</a></li>
+        <li><a href="familyhistory.html">Family History</a></li>
+        <li><a href="imaging.html">Imaging</a></li>
+      </ul>
+    </div>
+    <a href="#" data-toggle="collapse" data-target="#myProfile">My Profile</a>
+    <div class="collapse" id="myProfile">
+      <ul>
+        <li><a href="my-profile/personal.html">Personal</a></li>
+        <li><a href="my-profile/emergency.html">Emergency</a></li>
+        <li><a href="my-profile/insurance.html">Insurance</a></li>
+      </ul>
+    </div>
   </div>
 
-</form>
-</button>
+  <!-- end of header  -->
+  <div id="main" class="wes">
+    <div class="container-fluid">
+
+      <h1>  Medications</h1>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="background-color:#777777">Personal
+      <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="conditions.html">conditions</a></li>
+              <li><a href="familyhistory.html">family History</a></li>
+              <li><a href="allergy.html">Allergy</a></li>
+              <li><a href="medications.html">Medications</a></li>
+              <li><a href="imaging.html">Imaging</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-10">
+
+          <form>
+            <div class="form-group">
+              <label for="condition">Pharmacy</label>
+              <input type="text" class="form-control" id="pharmacy" placeholder="Pharmacy">
+            </div>
+            <div class="form-group">
+              <label for="name of medicine">Name of medicine</label>
+              <input type="text" class="form-control" id="medicine" placeholder="medicine">
+            </div>
+            <div class="form-group">
+              <label for="Prescription">Prescription</label>
+              <input type="text" class="form-control" id="prescription" placeholder="Prescription">
+            </div>
+            <div class="form-group">
+              <label for="notes">Notes</label>
+              <textarea class="form-control" id="notes" rows="3"></textarea>
+            </div>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+              <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+              <div class="invalid-feedback">Example invalid custom file feedback</div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+    <div class="extra">
+      <p class="extras"> These records are kept in our online database where they can be accessed later
+    </div>
+    <div class="row">
+      <div class="col-md-12 footer">
+        <div class="social">
+          <br>
+          <br>
+          <center>
+            <a href="https://www.facebook.com/infomedkenya.infomed.3" target="_blank" class="fa fa-facebook" style="display:inline"></a>
+            <a href="#" target="_blank" class="fa fa-twitter" style="display:inline"></a>
+            <a href="https://www.instagram.com/info_medkenya/" target="_blank" class="fa fa-instagram" style="display:inline"></a>
+            <a href="#" target="_blank" class="fa fa-google" style="display:inline"></a>
+            <a href="#" target="_blank" class="fa fa-phone" style="display:inline"></a>
+          </center>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
   </div>
-  <script src="records.js"></script>
+
+  <script src="myRecords.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+
 </html>

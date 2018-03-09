@@ -5,15 +5,14 @@ body {
 
 .logo{
   height: 100px;
-  width: 100px;
+  width: 200px;
   align: right;
 }
 
 #header{
-  background-color: #A5CBC3;
+  background-color: #BBBBBB;
   overflow: hidden;
 }
-
 
 .side-nav{
   height: 100%;
@@ -22,7 +21,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color:#3B341F;
+  background-color:#777777;
   opacity: 0.9;
   overflow-x: hidden;
   padding-top: 60px;
@@ -33,13 +32,13 @@ body {
   padding: 10px 10px 10px;
   text-decoration: none;
   font-size: 15px;
-  color: #EFFFC8;
+  color: #FFFFFF;
   display: block;
   transition: 0.3s;
 }
 
 .side-nav a:hover{
-  color: #EFFFC8;
+  color: #FFFFFF;
   font-size: 20px;
 }
 
@@ -52,6 +51,59 @@ body {
   color: #D2B4DE;
 }
 
+.title{
+  color: #CC0000;
+}
+
+.nav-btn{
+  left: 100%;
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+.social{
+  background-color: #333333;
+  padding: 0px;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color:#BBBBBB;
+  background-repeat: no-repeat;
+
+}
+
+.fa:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.FA:hover{
+  opacity: 0.7;
+}
+
 #main{
   transition: margin-left 0.5s;
   overflow:hidden;
@@ -59,13 +111,18 @@ body {
   padding: 0%;
 }
 
-.title{
-  color: #1F618D;
+ul {
+  list-style-type: none;
 }
 
-.nav-btn{
-  left: 100%;
+.col-md-10{
+  padding: 0px;
 }
+.col-md-12{
+  padding: 0px;
+}
+/*to be copied*/
+
 
 .sideside{
   font-size: 5px;
@@ -90,24 +147,6 @@ body {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-input[type=text] {
-    width: 130px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url('searchicon.png');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-}
-
-input[type=text]:focus {
-    width: 100%;
-}
 
 .firstAid{
   height: 400px;
@@ -125,31 +164,6 @@ input[type=text]:focus {
   width: 100%;
 }
 
-.social{
-  background-color: #1F618D;
-  padding: 0px;
-}
-
-.fa {
-  padding: 15px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  color:#3B341F;
-  background-repeat: no-repeat;
-
-}
-
-.fa:hover {
-  opacity: 0.7;
-  text-decoration: none;
-}
-
-.FA:hover{
-  opacity: 0.7;
-}
 
 .gh:hover{
   opacity: 0.7;
@@ -162,10 +176,4 @@ input[type=text]:focus {
   padding: 0px;
   padding-left: 0px;
   padding-right: 0px;
-}
-.col-md-10{
-  padding: 0px;
-}
-.col-md-12{
-  padding: 0px;
 }

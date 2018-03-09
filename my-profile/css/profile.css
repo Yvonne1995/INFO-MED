@@ -9,10 +9,6 @@ body {
   align: right;
 }
 
-.social a {
-  font-size: 30px;
-}
-
 #header {
   background-color: #BBBBBB;
   overflow: hidden;
@@ -89,13 +85,16 @@ input[type=text]:focus {
 
 .fa {
   padding: 15px;
-  font-size: 30px;
   width: 50px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
   color: #BBBBBB;
   background-repeat: no-repeat;
+}
+
+.social a {
+  font-size: 30px;
 }
 
 .fa:hover {
@@ -126,6 +125,36 @@ ul {
   padding: 0px;
 }
 
-.wes{
-  padding-left: 100px;
+/*to be copied*/
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.form-group {
+  margin-right: 500px;
+  margin-left: 100px;
+}
+
+.dropdown {
+  margin-left: 96px;
+  margin-bottom: 50px;
+}
+
+#show-contact {
+  display: none;
+}
+
+.contact {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.contact:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  text-align: center;
 }
